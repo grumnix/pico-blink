@@ -11,6 +11,7 @@ target_link_libraries(${PROJECT_NAME} pico_stdlib)
 pico_add_extra_outputs(${PROJECT_NAME})
 
 set(EXTRA_OUTPUTS
+  ${CMAKE_BINARY_DIR}/${PROJECT_NAME}.elf
   ${CMAKE_BINARY_DIR}/${PROJECT_NAME}.bin
   ${CMAKE_BINARY_DIR}/${PROJECT_NAME}.hex
   ${CMAKE_BINARY_DIR}/${PROJECT_NAME}.dis
